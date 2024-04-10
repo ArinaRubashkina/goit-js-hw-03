@@ -1,10 +1,11 @@
 function slugify(title){
-    const words = title.join(" ");
-    const normalizedSlugify = slugify.toLowerCase();
-    const trirdSlugify = normalizedSlugify.join("-");
-    return thirdSlugify;
+    const titleArr = title.split(" ");
+    for(const word of titleArr){
+        console.log(word);
+    }
+    title.toLowerCase();
+    const slugify = titleArr.join("-");
 }
-
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
 console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
