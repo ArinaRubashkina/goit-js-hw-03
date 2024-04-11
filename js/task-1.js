@@ -1,10 +1,10 @@
 function slugify(title){
-    const titleArr = title.split(" ");
+    const normalizedTitle = title.toLowerCase();
+    const titleArr = normalizedTitle.split(" ");
     for(const word of titleArr){
-        console.log(word);
     }
-    title.toLowerCase();
     const slugify = titleArr.join("-");
+    return slugify;
 }
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"

@@ -3,10 +3,9 @@ function filterArray(numbers, value){
  for(const number of numbers){
   if(number>value){
     result.push(number);
-  } else {
-    return result;
   }
  }
+ return result;
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
